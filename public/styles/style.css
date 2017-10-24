@@ -128,7 +128,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   box-sizing: border-box; }
 
-.flex {
+.flex, .frontImg, .imgSixSeven {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -136,5 +136,138 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-size: 62.5%; }
+
+body {
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover {
+    text-decoration: underline;
+    color: grey; }
+
+header {
+  padding: 0 25px; }
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.frontImg {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  position: absolute;
+  bottom: 30px; }
+  .frontImg img {
+    width: 40%;
+    height: 40%; }
+
+.imgOne {
+  max-width: 55%;
+  display: block;
+  margin: 0 5px 10px 40%; }
+
+.imgTwo {
+  max-width: 25%;
+  position: relative;
+  top: -50px;
+  margin-top: 70px; }
+
+.imgThree {
+  max-width: 26%;
+  margin: 0 5%; }
+
+.imgFour {
+  max-width: 25%;
+  position: relative;
+  top: -50px; }
+
+.imgFive {
+  max-width: 450px;
+  margin: 5% auto; }
+
+.imgSix {
+  width: 50%; }
+  .imgSix img {
+    max-width: 90%;
+    margin: 2%; }
+
+.imgSeven {
+  width: 50%;
+  max-width: 550px; }
+
+.imgEight {
+  margin: 40px 36px 60px 25%;
+  max-width: 33%; }
+
+.imgNine {
+  max-width: 33%; }
+
+.imgTen {
+  max-width: 30%; }
+
+.imgEleven {
+  margin-left: 14%;
+  max-width: 48%; }
+
+.imgTwelve {
+  max-width: 40%;
+  margin: 5%; }
+
+.imgThirteen {
+  max-width: 40%;
+  margin: 8px; }
+
+.imgFourteen {
+  max-width: 500px;
+  margin: 20px auto; }
+
+.imgFifteen {
+  margin: 60px auto;
+  margin-left: 25%; }
+  .imgFifteen img {
+    max-width: 40%; }
+
+.essay {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px; }
+
+@media (max-width: 600px) {
+  .project img, .project .imgFive, .project .imgSeven, .project .imgTen, .project .imgThirteen, .project .imgFourteen {
+    max-width: 100%;
+    padding: 2%;
+    height: auto;
+    margin: 0; }
+  .project .imgTwo, .project .imgFour {
+    top: 0; }
+  .project .imgSixSeven {
+    display: block; }
+    .project .imgSixSeven .imgSix {
+      width: 100%; }
+      .project .imgSixSeven .imgSix img {
+        width: 100%; }
+    .project .imgSixSeven .imgSeven {
+      width: 100%; }
+  .project .imgFifteen {
+    width: 100%;
+    margin: 0; }
+    .project .imgFifteen img {
+      width: 100%;
+      padding: 2%; }
+  .essay {
+    padding: 2%; } }
 
 /*# sourceMappingURL=style.css.map */

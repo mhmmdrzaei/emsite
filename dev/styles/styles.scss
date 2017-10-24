@@ -26,3 +26,165 @@ $color-cream:#EFDE7F;
 html {
 	font-size: 62.5%;
 }
+body {
+	font-family: $font-body;
+	@include fontSize(16);
+}
+h3 {
+	@include fontSize(20);
+}
+a {
+	text-decoration: none;
+	color: black;
+	&:hover {
+		text-decoration: underline;
+		color: grey;
+	}
+}
+header {
+	padding: 0 25px;
+}
+.content {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 15px;
+}
+ul {
+	list-style: none;
+	padding: 0;
+}
+.frontImg {
+	@extend .flex;
+	justify-content: flex-end; 
+	position: absolute;
+	bottom: 30px;
+	img {
+		width: 40%;
+		height: 40%;
+	}
+}
+.project {
+
+
+} 
+.imgOne {
+	
+	max-width: 55%;
+	display: block;
+	margin: 0 5px 10px 40%;
+
+}
+.imgTwo {
+	max-width: 25%;
+	position: relative;
+    top: -50px;
+    margin-top: 70px;
+}
+.imgThree {
+	max-width: 26%;
+	margin: 0 5%;
+}
+.imgFour {
+	max-width: 25%;
+	position: relative;
+	top: -50px;
+}
+.imgFive {
+	max-width: 450px;
+    margin: 5% auto;
+}
+.imgSixSeven{
+	@extend .flex;
+}
+
+.imgSix {
+	width: 50%;
+	img{
+	max-width: 90%;
+    margin: 2%;	
+	}
+	
+}
+.imgSeven {
+	width: 50%;
+	max-width: 550px;
+	// margin: 2% 5px 5px 37%;
+}
+.imgEight {
+	margin: 40px 36px 60px 25%;
+    max-width: 33%;
+}
+.imgNine {
+	max-width: 33%;
+}
+.imgTen {
+	max-width: 30%;
+}
+.imgEleven{
+	margin-left: 14%;
+    max-width: 48%;
+}
+.imgTwelve {
+	max-width: 40%;
+	margin: 5%;
+}
+.imgThirteen {
+	max-width: 40%;
+	margin: 8px;
+}
+.imgFourteen {
+	max-width: 500px;
+    margin: 20px auto;
+}
+.imgFifteen {
+	margin: 60px auto; 
+	margin-left: 25%;
+	img {
+		max-width: 40%;
+	}
+}
+.essay {
+	width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px){
+	.project{
+		img, .imgFive, .imgSeven, .imgTen, .imgThirteen, .imgFourteen {
+			max-width: 100%;
+			padding: 2%;
+			height: auto;
+			margin: 0;
+		}
+		.imgTwo, .imgFour {
+			top: 0;
+		}
+		.imgSixSeven{
+			display: block;
+			.imgSix {
+				width: 100%;
+
+
+				img {
+					width: 100%;
+				}
+			}
+			.imgSeven {
+				width: 100%;
+				
+			}
+		}
+		.imgFifteen {
+			width: 100%;
+			margin: 0;
+			img{
+				width: 100%;
+				padding: 2%;
+			}
+		}
+	}
+	.essay {
+		padding: 2%;
+	}
+}
